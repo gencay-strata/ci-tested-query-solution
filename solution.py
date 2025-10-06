@@ -14,5 +14,5 @@ def calculate_net_new_products(car_launches):
         'product_name_2019': 'nunique'
     }).reset_index()
 
-    df['net_new_products'] = df['product_name_2020'] - df['product_name_2019']
+    df['new_products'] = df['product_name_2020'] - df['product_name_2019']
     return df[['company_name', 'net_new_products']]
